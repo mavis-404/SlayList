@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="icons/icon-192.png" />
+    <title>Plan & Read App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section id="home">
+      <h1>welcome to change</h1>
+      <h2>your daily life & hobby at once</h2>
+      <div class="bottbtn">
+        <button id="openTodo">go to my slayList</button>
+        <button id="openShelf">my fantasy room</button>
+      </div>
+      <p class="tagline">plan it. slay it. repeat.💅</p>
+    </section>
+    <section id="todo" style="display: none">
+      <h2>my to-do list</h2>
+
+      <input type="text" id="newTaskInput" placeholder="Add a new task" />
+      <input type="time" id="timeInput" />
+      <button id="addTask">➕</button>
+      <ul id="taskList">
+        <li>
+          <input type="checkbox" class="task-check" />
+          <span class="task-text">done with my day</span>
+          <button class="edit">✏️</button>
+          <button class="delete">❌</button>
+        </li>
+      </ul>
+      <button id="backFromTodo">⬅back</button>
+    </section>
+    <section id="shelf" style="display: none">
+      <h2>My Bookshelf</h2>
+      <ul id="categoryList">
+        <li class="category">
+          <button data-style="fiction">Fiction</button>
+          <div class="genres" data-genres="fiction" style="display: none">
+            <button data-genre="romance">Romance</button>
+            <button data-genre="fantasy">Fantasy</button>
+            <button data-genre="sci-fi">Sci-Fi</button>
+          </div>
+        </li>
+        <li class="category">
+          <button data-style="non-fiction">Non-Fiction</button>
+          <div class="genres" data-genres="non-fiction" style="display: none">
+            <button data-genre="biography">Biography</button>
+            <button data-genre="self-help">Self-Help</button>
+          </div>
+        </li>
+        <li class="category">
+          <button data-style="additional">Additional</button>
+          <div class="genres" data-genres="additional" style="display: none">
+            <button data-genre="poetry">Poetry</button>
+            <button data-genre="classic">Classic</button>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Book list -->
+      <ul id="bookDisplay"></ul>
+
+      <!-- Book content reader -->
+      <div
+        id="reader"
+        style="
+          white-space: pre-wrap;
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-top: 15px;
+          height: 300px;
+          overflow-y: scroll;
+        "
+      >
+        Select a book to read its content here...
+      </div>
+      <button id="backFromShelf">⬅back</button>
+    </section>
+  </body>
+</html>
