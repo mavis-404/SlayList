@@ -1,9 +1,9 @@
 const CACHE_NAME = "slaylist-cache-v1";
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
+  "./",
+  "./index.html",
+  "./style.css",
+  "./script.js",
   // add other assets like images here
 ];
 
