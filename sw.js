@@ -3,7 +3,7 @@ const FILES_TO_CACHE = [
   "/",
   "/index.html",
   "/style.css",
-  "/main.js",
+  "/script.js",
   // add other assets like images here
 ];
 
