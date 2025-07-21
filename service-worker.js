@@ -4,8 +4,22 @@ const FILES_TO_CACHE = [
   "./index.html",
   "./style.css",
   "./script.js",
-  // add other assets like images here
+  "./manifest.json",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./screenshots/screenshot.png",
+  "./screenshots/screenshot1.png",
+
+  // Books
+  "./books/Crime and Punishment.txt",
+  "./books/the idiot.txt",
+  "./books/notes from underground.txt",
+  "./books/frankenstein.txt",
+  "./books/pride and prejudice.txt",
+  "./books/meditations.txt",
+  "./books/the brothers karamazov.txt",
 ];
+// add other assets like images here
 
 self.addEventListener("install", (evt) => {
   evt.waitUntil(
